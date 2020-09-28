@@ -8,8 +8,12 @@
 
 }
 
-.scoll-down:hover {
-    color: rgba(255, 243, 175, 0.5);
+.customIcon {
+    color: #ffc107;
+}
+
+.customIcon:hover {
+    color: rgb(255, 193, 7, 0.5);
 }
 
 @media screen and (min-width: 768px) {

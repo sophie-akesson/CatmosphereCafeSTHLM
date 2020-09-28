@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="buyModalLabel">Thank you for your interest</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <p>Gift vouchers can only be bought at the café counter for now. We'll be selling vouchers online verrry soon!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="container-fluid px-0 bg-white">
         <div class="row no-gutters">
             <div class="col-12">
@@ -32,7 +50,7 @@
                                 <a class="nav-link" href="#menu">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Reservations</a>
+                                <a class="nav-link" href="#vouchers">Gift vouchers</a>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +105,7 @@
         <div class="row no-gutters">
             <div class="col-12 text-center p-3 d-none d-lg-block">
                 <a href="#about">
-                    <span class="fas fa-angle-down text-warning pt-3 fa-3x scroll-down" aria-hidden="true"></span>
+                    <span class="fas fa-angle-down pt-3 fa-3x customIcon" aria-hidden="true"></span>
                     <span class="sr-only">Scroll down the page</span>
                 </a>
             </div>
@@ -109,7 +127,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-12 text-center p-3 text-light bg-dark">
+            <div class="col-12 text-center p-5 text-light bg-dark">
                 <h2 class="pb-2" id="cats">Our cats</h2>
                 <p>Our cats are from various <a class="text-warning" href="#cat-shelters">cat shelters</a>. We care about the cats and because of this they retire after 3 months and go back the shelter in hope that they'll find their forever home.</p>
                 <p>Current rotation of cats:</p>
@@ -153,7 +171,7 @@
         </div>
         <div class="row no-gutters">
             <div class="col-12 text-center text-muted p-3">
-                <h2 class="text-dark id="menu">Menu</h2>
+                <h2 class="text-dark" id="menu">Menu</h2>
             </div>
         </div>
         <div class="row no-gutters">
@@ -193,54 +211,54 @@
                 </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-12 col-lg-6 text-center">
+            <div class="col-12 text-center">
                 <img src="./images/pillow.jpg" class="w-100" alt="Responsive image of cat">
             </div>
-            <div class="col-12 col-md-6 text-center p-5 text-light bg-dark">
-                <h2 class="pb-2" id="cats">Reservations</h2>
-                <p></p>
-                <p>Want to make a reservation? Contact us using our form below:</p>
-                <form>
-                    <div class="form-group">
-                        <label for="emailInput">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phoneInput">Cellphone number</label>
-                        <input type="text" class="form-control" id="phoneInput" placeholder="07X-XXXXXXX">
-                    </div>
-                    <div class="form-group">
-                        <label for="nrOfPeopleInput">Email address</label>
-                        <input type="number" class="form-control" id="nrOfPeopleInput" placeholder="2">
-                    </div>
-                    <button>Send</button>
-                </form>
-                </div>
         </div>
-        <div class="row no-gutters">
-            <div class="col-12 col-md-6 text-center text-muted p-3">
-                <h2 class="text-dark">Gift vouchers available</h2>
-                <p>Gift vouchers are now available for purrchase. These can be bought at the café checkout for any amount.</p>
+        <div class="row no-gutters"></div>
+            <div class="col-12 text-center p-5 text-muted align-items-center">
+                <h2 class="pb-2 text-dark" id="vouchers"><span class="badge badge-warning">Mew!</span> Gift vouchers</h2>
+                <p>Gift vouchers are now available for purrchase.</p>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#buyModal">Click to buy!</button>
             </div>
         </div>
         <div class="row no-gutters">
-                <div class="col-6 bg-dark text-light p-3 p-md-5">
-                    <p>Open hours: 10-17</p>
-                    <adress>Catmosphere café STHLM<br>Hornsgatan 158<br>117 28 Stockholm</adress>
+            <div class="d-xs-none col-md-1 col-lg-3 bg-dark"></div>
+            <div class="col-12 col-md-10 col-lg-6 bg-dark text-light p-3 p-md-5">
+                <div class="row">
+                    <div class="col-4 p-3 p-md-5">
+                        <p>Open hours: 10-17</p>
+                        <adress>Catmosphere café STHLM<br>Hornsgatan 158<br>117 28 Stockholm</adress>
+                    </div>
+                    <div class="col-4 p-3 p-md-5">
+                        <ul class="nav d-flex flex-column flex-md-row align-items-center justify-content-center">
+                            <li class="nav-item p-3">
+                                <a href="https://twitter.com"><span class="fab fa-twitter fa-2x customIcon"></span></a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a href="https://facebook.com"><span class="fab fa-facebook fa-2x customIcon"></span></a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a href="https://instagram.com"><span class="fab fa-instagram fa-2x customIcon"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 p-3 p-md-5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="text-warning" href="#">Privacy policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-warning" href="#">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-warning" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 bg-dark text-light p-3 p-md-5">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-warning" href="#">Privacy policy</a>
-                        </li>
-                        <li>
-                            <a class="text-warning" href="#">Jobs</a>
-                        </li>
-                        <li>
-                            <a class="text-warning" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="d-xs-none col-md-1 col-lg-3 bg-dark"></div>
         </div>
     </div>
 </body>
