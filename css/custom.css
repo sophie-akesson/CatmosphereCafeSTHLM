@@ -1,0 +1,27 @@
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .50);
+
+}
+
+.scoll-down:hover {
+    color: rgba(255, 243, 175, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-caption {
+        top: 30%;
+        bottom: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-caption {
+        top: 45%;
+        bottom: auto;
+    }
+}
