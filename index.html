@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0ae8c6af08.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/custom.js"></script>
 </head>
 <body>
     <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
@@ -34,7 +35,7 @@
         <div class="row no-gutters">
             <div class="col-12">
                 <nav class="navbar navbar-expand-md navbar-light bg-warning">
-                    <a class="navbar-brand w-25" href="index.html">Catmosphere café STHLM</a>
+                    <a class="navbar-brand text-uppercase" href="index.html">Catmosphere café STHLM</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -79,7 +80,7 @@
                             <div class="black-overlay"></div>
                             <div class="carousel-caption d-block">
                                 <h3>Meet our cats</h3>
-                                <p>Want to know our cats? Click <a class="text-warning" href="#">here</a>.</p>
+                                <p>Want to know our cats? Click <a class="text-warning" href="#cats">here</a>.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -175,7 +176,7 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-12 col-md-4 text-center text-muted p-5">
+            <div class="col-12 col-md-4 text-center text-muted p-5 p-md-3 p-lg-5">
                 <h3 class="text-dark">Drinks</h3>
                 <ul class="d-inline-block text-left">
                     <li>Coffee 35 SEK</li>
@@ -187,7 +188,7 @@
                     <li>Hot chocolate 39 SEK</li>
                 </ul>
             </div>
-                <div class="col-12 col-md-4 text-center text-dark bg-warning p-5">
+                <div class="col-12 col-md-4 text-center text-dark bg-warning p-5 p-md-3 p-lg-5">
                     <h3>Seasonal items</h3>
                     <p>We're currently offering autumn themed items:</p>
                     <ul class="d-inline-block text-left">
@@ -197,7 +198,7 @@
                         <li>Apple oat flat white 45 SEK</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 text-center text-muted p-5">
+                <div class="col-12 col-md-4 text-center text-muted p-5 p-md-3 p-lg-5">
                     <h3 class="text-dark">Mini bites & dessert</h3>
                     <ul class="d-inline-block text-left">
                         <li>Sandwhich 39 SEK</li>
@@ -215,7 +216,7 @@
                 <img src="./images/pillow.jpg" class="w-100" alt="Responsive image of cat">
             </div>
         </div>
-        <div class="row no-gutters"></div>
+        <div class="row no-gutters">
             <div class="col-12 text-center p-5 text-muted align-items-center">
                 <h2 class="pb-2 text-dark" id="vouchers"><span class="badge badge-warning">Mew!</span> Gift vouchers</h2>
                 <p>Gift vouchers are now available for purrchase.</p>
@@ -226,11 +227,13 @@
             <div class="d-xs-none col-md-1 col-lg-3 bg-dark"></div>
             <div class="col-12 col-md-10 col-lg-6 bg-dark text-light p-3 p-md-5">
                 <div class="row">
-                    <div class="col-4 p-3 p-md-5">
+                    <div class="col-4 p-3">
                         <p>Open hours: 10-17</p>
-                        <adress>Catmosphere café STHLM<br>Hornsgatan 158<br>117 28 Stockholm</adress>
+                        <p class="address">Catmosphere café STHLM</p>
+                        <p class="address">Hornsgatan 158</p>
+                        <p class="address">117 28 Stockholm</p>
                     </div>
-                    <div class="col-4 p-3 p-md-5">
+                    <div class="col-4 p-3">
                         <ul class="nav d-flex flex-column flex-md-row align-items-center justify-content-center">
                             <li class="nav-item p-3">
                                 <a href="https://twitter.com"><span class="fab fa-twitter fa-2x customIcon"></span></a>
@@ -243,7 +246,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4 p-3 p-md-5">
+                    <div class="col-4 p-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="text-warning" href="#">Privacy policy</a>
@@ -260,6 +263,12 @@
             </div>
             <div class="d-xs-none col-md-1 col-lg-3 bg-dark"></div>
         </div>
+    </div>
+    <div id="btnTop">
+        <a href="#navFixed">
+            <span class="fas fa-angle-up pt-3 fa-3x customIcon" aria-hidden="true"></span>
+            <span class="sr-only">Scroll up the page</span>
+        </a>
     </div>
 </body>
 </html>

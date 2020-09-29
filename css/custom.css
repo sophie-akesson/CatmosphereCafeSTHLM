@@ -16,6 +16,18 @@
     color: rgb(255, 193, 7, 0.5);
 }
 
+#btnTop {
+    bottom: 2%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    position: fixed;
+}
+
+.address {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
     .carousel-caption {
         top: 30%;
